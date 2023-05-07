@@ -1,0 +1,251 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+.tablink {
+  background-color:lightgray;
+  color:black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 13px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color:pink;
+}
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+.logo1 img{
+position:absolute;
+height:10%;
+width:10%;
+}
+#Home {background-image:url("backimg2.jpg");
+background-repeat:no-repeat;
+background-blend-mode: soft-light;
+background-attachment: fixed;
+background-size:100% 100%;
+overflow:hidden;
+display: block;
+position:relative;}
+#Details
+{
+background-image:url("back.jpg");
+background-repeat:no-repeat;
+background-size:100% 100%;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#Contact {
+background-image:url("back.jpg");
+background-repeat:no-repeat;
+background-size:100% 100%;
+}
+#Register {
+background-image:url("back.jpg");
+background-repeat:no-repeat;
+background-size:100% 100%;
+}
+#Support{
+background-image:url("back.jpg"); 
+background-repeat:no-repeat;
+background-size:100% 100%;
+}
+body
+{
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-size:100% 100%;
+overflow:hidden;
+display: block;
+position:relative;
+}
+.p1{
+border-radius:30px 30px 30px 30px;
+border: 2px solid black;
+width:100%;
+height:15%;
+}
+.p2{
+border-radius:30px 30px 30px 30px;
+border: 2px solid yellow;
+width:50%;
+height:30%;
+float:left;
+}
+.p3{
+border-radius:30px 30px 30px 30px;
+border: 2px solid yellow;
+width:48%;
+height:30%;
+float:right;
+}
+form {border: 3px solid #f1f1f1;}
+input[type=text]{
+  width: 30%;
+  padding: 10px 10px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 10px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+.container {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+<div class="logo1">
+<img src="logo.jpg"></img>
+</div>
+<button class="tablink" onclick="openPage('Home', this, 'pink')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Support', this, 'pink')">Support</button>
+<button class="tablink" onclick="openPage('Details', this, 'pink')">Details</button>
+<button class="tablink" onclick="openPage('Register', this, 'pink')">Register</button>
+<button class="tablink" onclick="openPage('Contact', this, 'pink')">Contact</button>
+<div id="Home" class="tabcontent">
+<br><br><br><br>
+<h1 align="center"><font color="white">Womans Tailoring <br>With The Perfect Fit.</font><h1>
+<br><br><br><br>
+<h1 align="center"><i><font color="white">Get a perfect dress as per your body type...</font></i></h1>
+</div>
+<div id="Support" class="tabcontent">
+<h1 align="center"><b><font size="5%" color="red"><i>KrishnaKumari Tailorings</i></font></b></h1>
+<h3 align="center"><i>Hey Guys!A Hearty Welcome to our website Krishnakumari Tailorings.</h3>
+<div class="p1">
+<p align="center" style="color:blue">In this website we are providing information about the dresses which are stitched by us.</p>
+</div>
+<br>
+<p style="color:green" align="center"><u>Available Models are listed below</u></p>
+<div class="p2">
+<ul>
+<li>Punjabis
+<li>Long Tops
+<li>Langa Jackets
+<li>Blouses with different models
+<li>Frocks
+</ul>
+</div>
+<div class="p3">
+<ul>
+<li>Long Tops with Bell Hands
+<li>Plazos
+<li>Patiyalas
+<li>School Uniforms
+<li>Lehangas
+</ul>
+</div>
+</div>
+<div id="Details" class="tabcontent">
+<br><br><br><br><br><br><br><br>
+<h1 align="center"><i><font color="green">for further details<br>visit</font><br></i></h1>
+<a href="details.html"><h2 align="center"><font color="black">Details</font></h2></a>
+</div>
+<div id="Contact" class="tabcontent">
+<br><br><br><br><br><br>
+<h1 align="center">Contact us:<br></h1><font color="teal"><h2 align="center"><i>Phone No:123456789,987654321<br><br>Email:krishnakumari74@gmail.com</i><br><br>
+Address:A.T.Agraharam,4rth Lane,Guntur.</font></h2>
+</div>
+<div id="Register" class="tabcontent">
+<h2 align="center">SignUp</h2>
+<form method="post">
+<div class="container">
+    <label for="uname"><b>Name:</b></label>
+    <input type="text" placeholder="Enter Your Name" name="uname" required><br>
+<br>
+    <label for="type"><b>Enter type of dress you want:</b></label>
+     <select>
+<option>Punjabis</option>
+<option>Long Tops</option>
+<option>Langa Jackets</option>
+<option>Blouses with different models</option>
+<option>Frocks</option>
+<option>Long Tops with Bell Hands</option>
+<option>Plazos</option>
+<option>Patiyalas</option>
+<option>School Uniforms</option>
+<option>Lehangas</option></select><br>
+<h5><i>Note:The person who are registering must be <font color="green">Female</font>..Because it's a womans tailoring website.</i></h5>
+<h5><i><input type="checkbox">I agree to <a href="terms.html">Terms and Conditions.</a></i></h5>
+    <button onclick="register()">Register</button>
+    <label> 
+      <input type="checkbox" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container">
+    <button type="button" class="cancelbtn" onclick="cancel()" >Cancel</button>
+  </div>
+</form>
+</div>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
+function register(){
+confirm("Are you Sure!");
+alert("Succesfully registered!");
+}
+function cancel(){
+alert("you have cancelled your registration Succesfully!");
+}
+</script>   
+</body>
+</html> 
